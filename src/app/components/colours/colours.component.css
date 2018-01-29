@@ -1,0 +1,75 @@
+@font-face {
+font-family: 'Radnika';
+src: url('../../../assets/fonts/Radnika-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+font-weight: bold;
+}
+.box{
+	width:100%;
+	height:10%;
+	background-color:white;
+}
+.example-container{
+	background-color:white;
+	position: absolute;
+	text-align: center;
+	justify-content: center;
+  top: 60px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+}
+.example-sidenav{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+  width: 30%;
+  background:#DCDCDC;
+}
+.colorheader{
+	font-family:Radnika;
+}
+.demo-panel{
+padding:0;
+}
+*{
+margin:0;
+padding:0;
+box-sizing:border-fox;
+}
+.colourcontainer{
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login {
+  margin-left: 20px;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+	align-items: stretch;
+}
+.divclass{
+
+	width:10%;
+}
+.div1{
+	/* background-color: blue; */
+}
+.div2{
+	background-color: green;
+}
+.div3{
+	background-color: yellow;
+}
+.div4{
+	background-color: purple;
+}
+.div5{
+	background-color:lime;
+}

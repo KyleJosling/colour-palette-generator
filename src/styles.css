@@ -1,0 +1,150 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.css";
+@import "../node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+
+@font-face {
+font-family: 'Radnika';
+src: url('/assets/fonts/Radnika-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+font-weight: bold;
+}
+
+.introduction{
+	height: 100vh;
+	width: 100%;
+	background: url('/assets/images/orchard.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	position:relative;
+}
+.introduction-layer{
+
+	background-color:rgba(87,188,144,0.85);
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 100%;
+	 height: 100%;
+	 display:flex;
+	 justify-content: center;
+	 flex-direction:column;
+	 align-items: center;
+}
+.introduction-text{
+	display:flex;
+	justify-content: space-between;
+	font-family:Radnika;
+	color:white !important;
+	align-items: center;
+}
+
+#my-block.navbar li a:hover{
+	color:#015249;
+}
+
+.starter-template {
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+.navbar-text{
+	font-size:30px;
+	font-family:Radnika;
+	color:white !important;
+}
+.navbar{
+	-webkit-transition: all 0.6s ease-out;
+ -moz-transition: all 0.6s ease-out;
+ -o-transition: all 0.6s ease-out;
+ -ms-transition: all 0.6s ease-out;
+ transition: all 0.6s ease-out;
+
+}
+.nav-scrolled{
+	background-color:rgba(87,188,144,1);
+}
+.nav-link{
+	font-family:Radnika;
+	color:white;
+}
+.about-section{
+	background-color:#A5A5AF;
+}
+
+
+/* button */
+.intro-button {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+	-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+	background-color: transparent;
+	border-radius: 0.35em;
+	border: solid 3px #efefef;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 400;
+	height: 3.15em;
+	height: calc(2.75em + 6px);
+	line-height: 2.75em;
+	min-width: 10em;
+	padding: 0 1.5em;
+	margin:20px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+
+	.intro-button:hover {
+		border-color: #015249;
+		color: #015249 !important;
+	}
+	.intro-button a {
+		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+		border-color: #59ABE3;
+		color:white !important;
+	}
+	.intro-button:hover a{
+		border-color: #015249;
+		color: #015249 !important;
+		text-decoration: none;
+	}
+.container{
+	position:relative;
+	top:30%;
+}
+	.about{
+		height: 100vh;
+		width: 100%;
+		margin-bottom:0;
+		margin-left:0;
+		padding:0;
+		background-color:white;
+		align-items:center;
+	}
+.orchard-image{
+	margin:0;
+	padding:0;
+	width:100%;
+	height:auto;
+}
+
+.text-col{
+	background-color:#F5F5F5;
+}
+.about-text{
+	text-align:center;
+	font-family:Radnika;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	color:black;
+}
