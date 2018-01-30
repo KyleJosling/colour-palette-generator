@@ -1,35 +1,18 @@
-<!-- <ng-container>
-  <mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav mode="side" opened="true" class="example-sidenav"
-                 [fixedInViewport]="true">
-									 <div class="colorheader">
-										 <h1>Colour Extractor</h1>
-									 </div>
-									 <label>
-									   <input type="file" (change)="setFile($event)" style="display:none" multiple/>
-									   <a mat-raised-button color="primary">
-									     <mat-icon>file_upload</mat-icon>Upload
-									   </a>
-									 </label>
-    </mat-sidenav>
-  </mat-sidenav-container>
-</ng-container> -->
-<p>
+<div class="box">
+	<div>
+		<label>
+			<input type="file" (change)="setFile($event)" style="display:none" accept="image/jpg"/>
+			<a mat-raised-button color="primary">
+				<mat-icon>file_upload</mat-icon>Upload
+			</a>
+		</label>
+	</div>
+				<div class='colourbox'>
+					<div [ngStyle]="{'background-color':colors[0]}" class='div1 divclass'>{{colors[0]}}</div>
+					<div [ngStyle]="{'background-color':colors[1]}" class='div2 divclass'>{{colors[1]}}</div>
+					<div [ngStyle]="{'background-color':colors[2]}" class='div3 divclass'>{{colors[2]}}</div>
+					<div [ngStyle]="{'background-color':colors[3]}" class='div4 divclass'>{{colors[3]}}</div>
+					<div [ngStyle]="{'background-color':colors[4]}" class='div5 divclass'>{{colors[4]}}</div>
+				</div>
 
-</p>
-<label>
-	<input type="file" (change)="setFile($event)" style="display:none" multiple/>
-	<a mat-raised-button color="primary">
-		<mat-icon>file_upload</mat-icon>Upload
-	</a>
-</label>
-<div class="colourcontainer">
-
-		<div class='header'>
-			<div [ngStyle]="{'background-color':colors[0]}" class='div1 divclass'>{{colors[0]}}</div>
-			<div [ngStyle]="{'background-color':colors[1]}" class='div2 divclass'>{{colors[1]}}</div>
-			<div [ngStyle]="{'background-color':colors[2]}" class='div3 divclass'>{{colors[2]}}</div>
-			<div [ngStyle]="{'background-color':colors[3]}" class='div4 divclass'>{{colors[3]}}</div>
-			<div [ngStyle]="{'background-color':colors[4]}" class='div5 divclass'>{{colors[4]}}</div>
-		</div>
 </div>
