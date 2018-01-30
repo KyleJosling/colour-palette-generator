@@ -2,6 +2,29 @@
 font-family: 'Radnika';
 src: url('../../../assets/fonts/Radnika-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
 font-weight: bold;
+
+}
+.mat-icon{
+	display:inline-block;
+	vertical-align: middle;
+}
+.upload-button input{
+	height:100%;
+	width:20%;
+	opacity:0;
+}
+.upload-button{
+	font-family:Radnika;
+	background-color:white;
+	height:100%;
+	width:20%;
+	padding:5px;
+	text-decoration:none;
+	border:none;
+	font-size:20px;
+	text-align: center;
+	display:inline-block;
+	vertical-align: bottom;
 }
 .example-container{
 	background-color:white;
@@ -56,6 +79,7 @@ box-sizing:border-fox;
 	display:flex;
 	align-items:flex-end;
 	justify-content: center;
+	padding:10px;
 }
 .div1{
 	background-color: blue;
@@ -71,4 +95,16 @@ box-sizing:border-fox;
 }
 .div5{
 	background-color:lime;
+}
+.fill-remaining{
+flex:1 1 auto;
+}
+.mat-elevation-z24{
+
+position:relative;
+z-index:2;
+}
+.toolbar{
+	background-color:white;
+	padding-right:0;
 }

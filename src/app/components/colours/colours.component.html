@@ -1,12 +1,21 @@
+
 <div class="box">
-	<div>
-		<label>
-			<input type="file" (change)="setFile($event)" style="display:none" accept="image/jpg"/>
-			<a mat-raised-button color="primary">
-				<mat-icon>file_upload</mat-icon>Upload
-			</a>
-		</label>
+<mat-toolbar class="mat-elevation-z24 toolbar">
+		  <span>
+				<h1 class="colorheader">
+					PALETTE GENERATOR
+				</h1>
+			</span>
+			<div class="fill-remaining"></div>
+
+	<div style="height:0px;overflow:hidden">
+		<input type="file" #fileInput (click)="setFile($event)" accept="image/jpg"/>
 	</div>
+
+			<button (click)="fileInput.click()" class="upload-button"><mat-icon>file_upload</mat-icon>Upload</button>
+
+	</mat-toolbar>
+
 				<div class='colourbox'>
 					<div [ngStyle]="{'background-color':colors[0]}" class='div1 divclass'>{{colors[0]}}</div>
 					<div [ngStyle]="{'background-color':colors[1]}" class='div2 divclass'>{{colors[1]}}</div>

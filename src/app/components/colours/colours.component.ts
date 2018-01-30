@@ -20,8 +20,9 @@ export class ColoursComponent implements OnInit {
 
   ngOnInit() {
   }
-
-
+	public chooseFile(){
+	$('#fileInput').click();
+	}
 
   //file for sending post request to server
   public setFile(event) {
