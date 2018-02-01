@@ -8,6 +8,8 @@ import {RouterModule,Routes} from '@angular/router';
 import {MatMenuModule, MatButtonModule,MatListModule, MatIconModule, MatCardModule, MatSidenavModule,MatToolbarModule,MatCheckboxModule,MatFormFieldModule,MatInputModule} from '@angular/material';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {Ng4LoadingSpinnerModule} from 'ng4-loading-spinner';
+
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
 import { AboutComponent } from './components/about/about.component';
@@ -51,7 +53,8 @@ const appRoutes: Routes=[
 		MatListModule,
 		FormsModule,
 		ReactiveFormsModule,
-		BrowserAnimationsModule
+		BrowserAnimationsModule,
+		Ng4LoadingSpinnerModule.forRoot()
 	  ],
 		providers:[ DataService],
   bootstrap: [AppComponent]
