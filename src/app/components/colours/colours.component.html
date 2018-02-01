@@ -1,29 +1,10 @@
-<div class="box">
-<mat-toolbar class="mat-elevation-z24 toolbar">
-		  <span>
-				<h1 class="colorheader">
-					PALETTE GENERATOR
-				</h1>
-			</span>
-			<div class="fill-remaining"></div>
 
-	<div style="height:0px;overflow:hidden">
-		<label>
-			<input type="file" #fileInput (change)="setFile($event)" accept="image/jpg"/>
-		</label>
-	</div>
-
-			<button (click)="fileInput.click()" type="button" class="upload-button"><mat-icon>file_upload</mat-icon>Upload</button>
-
-	</mat-toolbar>
-
-				<div class='colourbox'>
-					<div [ngStyle]="{'background-color':colors[0]}" class='div1 divclass'>{{colors[0]}}</div>
-					<div [ngStyle]="{'background-color':colors[1]}" class='div2 divclass'>{{colors[1]}}</div>
-					<div [ngStyle]="{'background-color':colors[2]}" class='div3 divclass'>{{colors[2]}}</div>
-					<div [ngStyle]="{'background-color':colors[3]}" class='div4 divclass'>{{colors[3]}}</div>
-					<div [ngStyle]="{'background-color':colors[4]}" class='div5 divclass'>{{colors[4]}}</div>
-				</div>
-
+<div class='colourbox'>
+	<div [ngStyle]="{'background-color':colors[0]}" class='div1 divclass'>{{colors[0]}}</div>
+	<div [ngStyle]="{'background-color':colors[1]}" class='div2 divclass'>{{colors[1]}}</div>
+	<div [ngStyle]="{'background-color':colors[2]}" class='div3 divclass'>{{colors[2]}}</div>
+	<div [ngStyle]="{'background-color':colors[3]}" class='div4 divclass'>{{colors[3]}}</div>
+	<div [ngStyle]="{'background-color':colors[4]}" class='div5 divclass'>{{colors[4]}}</div>
 </div>
+
 <ng4-loading-spinner></ng4-loading-spinner>

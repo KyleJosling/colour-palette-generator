@@ -1,16 +1,17 @@
-<nav id="my-block" class="navbar navbar-expand fixed-top" [ngClass]= "{'nav-scrolled': isScrolled}">
-  <div class="collapse navbar-collapse">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" [ngx-scroll-to]="'target'" href="#">About</a>
-      </li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Get Started</a>
-			</li>
-    </ul>
-		<a class="navbar-text">SkyAnalyze</a>
-  </div>
-</nav>
+<mat-toolbar class="mat-elevation-z24 toolbar">
+		  <span>
+				<h1 class="colorheader">
+					PALETTE GENERATOR
+				</h1>
+			</span>
+			<div class="fill-remaining"></div>
+
+	<div style="height:0px;overflow:hidden">
+		<label>
+			<input type="file" #fileInput (change)="sendImage($event)" accept="image/jpg"/>
+		</label>
+	</div>
+
+			<button (click)="fileInput.click()" type="button" class="upload-button"><mat-icon>file_upload</mat-icon>Upload</button>
+
+</mat-toolbar>

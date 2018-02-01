@@ -4,75 +4,8 @@ src: url('../../../assets/fonts/Radnika-Medium.ttf')  format('truetype'); /* Saf
 font-weight: bold;
 
 }
-.mat-icon{
-	display:inline-block;
-	vertical-align: middle;
-}
-.upload-button input{
-	height:100%;
-	width:20%;
-	opacity:0;
-}
-.upload-button{
-	font-family:Radnika;
-	background-color:white;
-	height:100%;
-	width:20%;
-	padding:5px;
-	text-decoration:none;
-	border:none;
-	font-size:20px;
-	text-align: center;
-	display:inline-block;
-	vertical-align: bottom;
-}
-.loader{
-	border: 16px solid #f3f3f3; /* Light grey */
-border-top: 16px solid #3498db; /* Blue */
-border-radius: 50%;
-width: 120px;
-height: 120px;
-animation: spin 2s linear infinite;
-}
-.example-container{
-	background-color:white;
-	position: absolute;
-	text-align: center;
-	justify-content: center;
-  top: 60px;
-  bottom: 60px;
-  left: 0;
-  right: 0;
-}
-.example-sidenav{
-	display: flex;
-	justify-content: center;
-	text-align: center;
-  width: 30%;
-  background:#DCDCDC;
-}
-.colorheader{
-	font-family:Radnika;
-}
-.demo-panel{
-padding:0;
-}
-*{
-margin:0;
-padding:0;
-box-sizing:border-fox;
-}
 
-.login {
-  margin-left: 20px;
-}
-.box{
-	display:flex;
-	flex-flow: column;
-	height:100vh;
-}
 .colourbox {
-	flex: 1 1 auto;
   width:100%;
 	height:auto;
   display: flex;
@@ -104,15 +37,8 @@ box-sizing:border-fox;
 .div5{
 	background-color:lime;
 }
-.fill-remaining{
-flex:1 1 auto;
-}
-.mat-elevation-z24{
-
-position:relative;
-z-index:2;
-}
-.toolbar{
-	background-color:white;
-	padding-right:0;
+*{
+margin:0;
+padding:0;
+box-sizing:border-fox;
 }

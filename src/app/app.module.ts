@@ -4,6 +4,7 @@ import {FormsModule} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from  '@angular/common/http';
 import {RouterModule,Routes} from '@angular/router';
+import {Subject} from 'rxjs/Subject';
 
 import {MatMenuModule, MatButtonModule,MatListModule, MatIconModule, MatCardModule, MatSidenavModule,MatToolbarModule,MatCheckboxModule,MatFormFieldModule,MatInputModule} from '@angular/material';
 
@@ -20,11 +21,6 @@ import { ColoursComponent } from './components/colours/colours.component';
 
 import {DataService} from './services/data.service';
 
-const appRoutes: Routes=[
-	{path:'', component:IntroductionComponent},
-	{path:'colours', component:ColoursComponent}
-];
-
 
 @NgModule({
   declarations: [
@@ -40,7 +36,6 @@ const appRoutes: Routes=[
 		FormsModule,
 		HttpClientModule,
 		ScrollToModule.forRoot(),
-		RouterModule.forRoot(appRoutes),
 		MatMenuModule,
 		MatButtonModule,
 		MatIconModule,
