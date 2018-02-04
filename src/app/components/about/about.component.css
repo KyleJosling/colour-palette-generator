@@ -1,0 +1,19 @@
+.about{
+	width:100%;
+	background-color:white;
+	margin:0;
+	display:flex;
+	justify-content: center;
+}
+.abouttext{
+	width:50%;
+	font-family:Radnika;
+}
+.aboutpics{
+width:50%;
+}
+
+.img{
+width:100%;
+height:auto;
+}

@@ -1,17 +1,20 @@
 <mat-toolbar class="mat-elevation-z24 toolbar">
-		  <span>
-				<h1 class="colorheader">
-					PALETTE GENERATOR
-				</h1>
-			</span>
-			<div class="fill-remaining"></div>
 
-	<div style="height:0px;overflow:hidden">
-		<label>
-			<input type="file" #fileInput (change)="sendImage($event)" accept="image/jpg"/>
-		</label>
+	<div class="headerdiv">
+		<img src="/../../assets/images/rgb.png" class="logo"/>
+			<h1 class="colorheader">
+				Palette Generator
+			</h1>
+<div style="height:0px;overflow:hidden">
+	<label>
+		<input type="file" #fileInput (change)="sendImage($event)" accept="image/jpg"/>
+	</label>
+</div>
 	</div>
+	<div class="upload-button"></div>
+	<div class="upload-button"></div>
 
-			<button (click)="fileInput.click()" type="button" class="upload-button"><mat-icon>file_upload</mat-icon>Upload</button>
+	<button class="about-button" routerLink="/about">About</button>
+	<button (click)="fileInput.click()" type="button" class="upload-button" routerLink="/app"><mat-icon>file_upload</mat-icon>Upload</button>
 
 </mat-toolbar>

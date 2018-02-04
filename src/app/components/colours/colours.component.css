@@ -4,7 +4,14 @@ src: url('../../../assets/fonts/Radnika-Medium.ttf')  format('truetype'); /* Saf
 font-weight: bold;
 
 }
-
+:host {
+	flex: 1 1 auto;
+	width:100%;
+	height:auto;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+}
 .colourbox {
   width:100%;
 	height:auto;

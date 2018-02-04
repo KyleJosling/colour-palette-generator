@@ -17,38 +17,46 @@ export class DataService {
 
 		//Function sending post request to server
 	  public setFile(event) {
-		console.log("Service called")
 		this.spinnerService.show();
-		console.log('loading');
+		console.log("Service called")
+
+		//Interface for returned result
 	    interface ReturnedColours {
 	      result: string;
 	    }
-
 	    //Return if no files found
 	    let files = event.srcElement.files;
+			console.log(event);
 	    if (!files) {
 	      return;
 	    }
+
 	    //Create form data
 	    const formData: FormData = new FormData();
 	    formData.append('file', files[0]);
 
 	    //Make post request
-	    this.http.post<ReturnedColours>(`https://art-mind.herokuapp.com/stuff`, formData).subscribe(
-	      (r) => {
-	        console.log('got r', r.result);
+	    this.http.post<ReturnedColours>(`https://art-mind.herokuapp.com/stuff`,formData).subscribe(
+			// on response
+      (r) => {
+        console.log('got r', r);
 
-	        //Fill the colour array
-	        for (var i = 0; i < 5; i++) {
-	          console.log(r.result[i]);
-	          this.colors[i] = 'rgb(' + r.result[i][0] + ',' + r.result[i][1] + ',' + r.result[i][2] + ')';
-	        }
+        //Fill the colour array
+        for (var i = 0; i < 5; i++) {
+          console.log(r.result[i]);
+          this.colors[i] = 'rgb(' + r.result[i][0] + ',' + r.result[i][1] + ',' + r.result[i][2] + ')';
+        }
 
-					//Hide spinner when loading is done
-					this.spinnerService.hide();
-	        console.log(this.colors);
-					this.colorsFoundSource.next(this.colors);
-	      });
+				//Hide spinner when loading is done
+				this.spinnerService.hide();
+        console.log(this.colors);
+				this.colorsFoundSource.next(this.colors);
+      },
+			//Catch error
+			error=>{
+				console.log(error);
+				this.spinnerService.hide();
+			});
 	  }
 
 

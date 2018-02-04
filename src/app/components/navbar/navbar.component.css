@@ -1,9 +1,13 @@
-.fill-remaining{
-flex:1 1 auto;
+.headerdiv{
+	width:20%;
+	text-align:center;
+	display:inline-block;
 }
 .toolbar{
 	background-color:white;
 	padding-right:0;
+	padding-left:0;
+	justify-content: flex-end;
 }
 .mat-elevation-z24{
 
@@ -15,6 +19,7 @@ z-index:2;
 	vertical-align: middle;
 }
 .upload-button input{
+	text-decoration: none;
 	height:100%;
 	width:20%;
 	opacity:0;
@@ -32,6 +37,28 @@ z-index:2;
 	display:inline-block;
 	vertical-align: bottom;
 }
+.upload-button:focus{
+	outline:0;
+}
+.about-button{
+	font-family:Radnika;
+	background-color:white;
+	height:100%;
+	width:20%;
+	padding:5px;
+	text-decoration:none;
+	border:none;
+	font-size:20px;
+	text-align: center;
+	display:inline-block;
+	vertical-align: bottom;
+
+}
 .colorheader{
 	font-family:Radnika;
+	display:inline-block;
+}
+.logo{
+width:10%;
+display:inline-block;
 }

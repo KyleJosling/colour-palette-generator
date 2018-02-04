@@ -17,6 +17,7 @@ export class ColoursComponent implements OnInit {
 
 		//Subscribe to the data service so we can get updated colours
 		this.dataService.colorsFound$.subscribe((cols)=>{
+		//set colors in the callback function
 		this.colors=cols;
 	});
 

@@ -12,23 +12,23 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {Ng4LoadingSpinnerModule} from 'ng4-loading-spinner';
 
 import { AppComponent } from './app.component';
-import { UserComponent } from './components/user/user.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { IntroductionComponent } from './components/introduction/introduction.component';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ColoursComponent } from './components/colours/colours.component';
 
 import {DataService} from './services/data.service';
 
+const appRoutes:Routes=[
+	{path:'about', component:AboutComponent},
+	{path:'app', component:ColoursComponent }
+];
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserComponent,
     AboutComponent,
     NavbarComponent,
-    IntroductionComponent,
     ColoursComponent
   ],
   imports: [
@@ -36,6 +36,7 @@ import {DataService} from './services/data.service';
 		FormsModule,
 		HttpClientModule,
 		ScrollToModule.forRoot(),
+		RouterModule.forRoot(appRoutes),
 		MatMenuModule,
 		MatButtonModule,
 		MatIconModule,
