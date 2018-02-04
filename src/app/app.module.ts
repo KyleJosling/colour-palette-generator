@@ -20,7 +20,7 @@ import { ColoursComponent } from './components/colours/colours.component';
 import {DataService} from './services/data.service';
 
 const appRoutes:Routes=[
-	{path:'about', component:AboutComponent},
+	{path:'', component:AboutComponent},
 	{path:'app', component:ColoursComponent }
 ];
 
