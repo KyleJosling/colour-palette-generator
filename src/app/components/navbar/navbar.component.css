@@ -1,7 +1,15 @@
 .headerdiv{
+	font-family:Radnika;
+	background-color:white;
+	height:100%;
 	width:20%;
-	text-align:center;
+	padding:5px;
+	text-decoration:none;
+	border:none;
+	font-size:20px;
+	text-align: center;
 	display:inline-block;
+	vertical-align: bottom;
 }
 .toolbar{
 	background-color:white;
@@ -39,20 +47,6 @@ z-index:2;
 }
 .upload-button:focus{
 	outline:0;
-}
-.about-button{
-	font-family:Radnika;
-	background-color:white;
-	height:100%;
-	width:20%;
-	padding:5px;
-	text-decoration:none;
-	border:none;
-	font-size:20px;
-	text-align: center;
-	display:inline-block;
-	vertical-align: bottom;
-
 }
 .colorheader{
 	font-family:Radnika;

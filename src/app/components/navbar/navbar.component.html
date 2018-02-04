@@ -1,6 +1,6 @@
 <mat-toolbar class="mat-elevation-z24 toolbar">
 
-	<div class="headerdiv">
+	<button class="upload-button" routerLink="/app">
 		<img src="/../../assets/images/rgb.png" class="logo"/>
 			<h1 class="colorheader">
 				Palette Generator
@@ -9,12 +9,12 @@
 	<label>
 		<input type="file" #fileInput (change)="sendImage($event)" accept="image/jpg"/>
 	</label>
-</div>
 	</div>
+	</button>
 	<div class="upload-button"></div>
 	<div class="upload-button"></div>
 
-	<button class="about-button" routerLink="/about">About</button>
+	<button class="upload-button" routerLink="/about">About</button>
 	<button (click)="fileInput.click()" type="button" class="upload-button" routerLink="/app"><mat-icon>file_upload</mat-icon>Upload</button>
 
 </mat-toolbar>
