@@ -10,6 +10,9 @@ import {RouterLink} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+	//Number of suggested colours set to three as default
+	private kMeans=3;
+
   constructor(private dataService:DataService) {
 	 }
 	 ngOnInit() {
@@ -17,7 +20,11 @@ export class NavbarComponent implements OnInit {
 	  }
 
 		public sendImage(event){
-			this.dataService.setFile(event);
+			//is this bad practice? idk
+			this.dataService.setFile(event,this.kMeans);
+		}
+		public pitch(event){
+			this.kMeans=event.value;
 		}
 
 }

@@ -5,14 +5,19 @@
 			<h1 class="colorheader">
 				Palette Generator
 			</h1>
+
 <div style="height:0px;overflow:hidden">
 	<label>
 		<input type="file" #fileInput (change)="sendImage($event)" accept="image/jpg"/>
 	</label>
 	</div>
 	</button>
+
+	<div class="upload-button" matTooltip="AI suggested colours: {{5-kMeans}}">
+		<mat-slider tickInterval="1" min="1" max="5" step="1" value="2" #matslider (input)="pitch($event)"></mat-slider></div>
 	<div class="upload-button"></div>
-	<div class="upload-button"></div>
+
+	<!-- <span matTooltip="Tooltip!">I have a tooltip</span> -->
 
 	<button class="upload-button" routerLink="">About</button>
 	<button (click)="fileInput.click()" type="button" class="upload-button" routerLink="/app"><mat-icon>file_upload</mat-icon>Upload</button>

@@ -13,6 +13,7 @@ font-weight: bold;
 	align-items: stretch;
 }
 .colourbox {
+	font-size:20px;
   width:100%;
 	height:auto;
   display: flex;
@@ -21,7 +22,6 @@ font-weight: bold;
 }
 .divclass{
 	font-family: Radnika;
-	font-size:20px;
 	color:rgba(0,0,0,0.8);
 	width:20%;
 	display:flex;
@@ -44,8 +44,9 @@ font-weight: bold;
 .div5{
 	background-color:lime;
 }
-/* *{
-margin:0;
-padding:0;
-box-sizing:border-fox;
-} */
+@media only screen and (max-width:500px){
+
+	.colourbox{
+		font-size:10px;
+	}
+}

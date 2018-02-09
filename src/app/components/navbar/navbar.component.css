@@ -6,7 +6,6 @@
 	padding:5px;
 	text-decoration:none;
 	border:none;
-	font-size:20px;
 	text-align: center;
 	display:inline-block;
 	vertical-align: bottom;
@@ -55,4 +54,28 @@ z-index:2;
 .logo{
 width:10%;
 display:inline-block;
+}
+
+@media only screen and (max-width:500px){
+
+	.logo{
+	display:hidden;
+}
+
+}
+
+/* CSS to change Default/'Accent' color */
+
+::ng-deep .mat-accent .mat-slider-thumb {
+    background-color: black;
+}
+::ng-deep .mat-accent .mat-slider-thumb-label {
+    background-color: black;
+}
+::ng-deep .mat-accent .mat-slider-track-fill {
+    background-color: black;
+}
+
+/deep/ .mat-tooltip {
+  font-size: 14px;
 }

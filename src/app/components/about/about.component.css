@@ -11,10 +11,13 @@
 	width:100%;
 	background-color:white;
 	margin:0;
+	padding-bottom:0;
 	display:flex;
 	justify-content: center;
 }
 .abouttext{
+	display:flex;
+	flex-direction:column;
 	width:50%;
 	font-family:Radnika;
 }
@@ -25,4 +28,9 @@ width:50%;
 .img{
 width:100%;
 height:auto;
+}
+.footer{
+	font-size:15px;
+	position:relative;
+	bottom:0;
 }

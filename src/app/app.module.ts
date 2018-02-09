@@ -6,7 +6,7 @@ import {HttpClientModule} from  '@angular/common/http';
 import {RouterModule,Routes} from '@angular/router';
 import {Subject} from 'rxjs/Subject';
 
-import {MatMenuModule, MatButtonModule,MatListModule, MatIconModule, MatCardModule, MatSidenavModule,MatToolbarModule,MatCheckboxModule,MatFormFieldModule,MatInputModule} from '@angular/material';
+import {MatTooltipModule,MatMenuModule,MatSliderModule, MatButtonModule,MatListModule, MatIconModule, MatCardModule, MatSidenavModule,MatToolbarModule,MatCheckboxModule,MatFormFieldModule,MatInputModule} from '@angular/material';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {Ng4LoadingSpinnerModule} from 'ng4-loading-spinner';
@@ -18,6 +18,7 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { ColoursComponent } from './components/colours/colours.component';
 
 import {DataService} from './services/data.service';
+
 
 const appRoutes:Routes=[
 	{path:'', component:AboutComponent},
@@ -47,6 +48,8 @@ const appRoutes:Routes=[
 		MatFormFieldModule,
 		MatInputModule,
 		MatListModule,
+		MatSliderModule,
+		MatTooltipModule,
 		FormsModule,
 		ReactiveFormsModule,
 		BrowserAnimationsModule,
