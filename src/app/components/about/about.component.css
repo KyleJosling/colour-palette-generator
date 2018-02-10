@@ -15,12 +15,14 @@
 	display:flex;
 	justify-content: center;
 }
+
 .abouttext{
 	display:flex;
-	flex-direction:column;
 	width:50%;
 	font-family:Radnika;
+	flex-direction:column;
 }
+
 .aboutpics{
 width:50%;
 }
@@ -29,8 +31,8 @@ width:50%;
 width:100%;
 height:auto;
 }
+
 .footer{
 	font-size:15px;
-	position:relative;
-	bottom:0;
+	margin-top:auto;
 }

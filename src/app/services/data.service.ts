@@ -7,6 +7,7 @@ import { Subject } from 'rxjs/Subject';
 export class DataService {
 
   private colors: string[] = [];
+	//Create subject (list of strings that will be our colours)
   private colorsFoundSource = new Subject<string[]>();
 
 	//Observable for colours component
@@ -20,8 +21,6 @@ export class DataService {
   public setFile(event, kMeans) {
 
     this.spinnerService.show();
-    console.log("Service called");
-		console.log(kMeans);
 
     //Interface for returned result
     interface ReturnedColours {
@@ -40,6 +39,7 @@ export class DataService {
 
     //Make post request https://art-mind.herokuapp.com/stuff
     this.http.post<ReturnedColours>(`https://art-mind.herokuapp.com/stuff`, formData).subscribe(
+
       // on response
       (r) => {
         console.log('got r', r);
@@ -53,17 +53,15 @@ export class DataService {
         //Hide spinner when loading is done
         this.spinnerService.hide();
         console.log(this.colors);
+
+				//Calls next on the
         this.colorsFoundSource.next(this.colors);
       },
+
       //Catch error
-      error => {
+      (error) => {
         console.log(error);
         this.spinnerService.hide();
       });
   }
-
-
-
-
-
 }

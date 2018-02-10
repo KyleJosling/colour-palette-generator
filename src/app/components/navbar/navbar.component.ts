@@ -20,7 +20,8 @@ export class NavbarComponent implements OnInit {
 	  }
 
 		public sendImage(event){
-			//is this bad practice? idk
+			//Call setFile function in dataservice which pushses data on Observable
+			//The observable is subscribed to by the colours component, and it receives the colours
 			this.dataService.setFile(event,this.kMeans);
 		}
 		public pitch(event){

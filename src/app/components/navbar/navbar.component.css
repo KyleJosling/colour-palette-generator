@@ -43,7 +43,6 @@ z-index:2;
 	font-size:20px;
 	text-align: center;
 	display:inline-block;
-	vertical-align: bottom;
 }
 .upload-button:focus{
 	outline:0;
@@ -53,8 +52,9 @@ z-index:2;
 	display:inline-block;
 }
 .logo{
-	width:10%;
-	display:inline-block;display:inline-block;
+	vertical-align: baseline;
+	width:20px;
+	display:inline-block;
 }
 
 /* mobile */
@@ -78,7 +78,7 @@ z-index:2;
 	}
 	.upload{
 		display:none;
-	}	
+	}
 }
 
 /* CSS to change Default/'Accent' color */
