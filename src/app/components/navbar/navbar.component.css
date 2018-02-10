@@ -58,7 +58,7 @@ z-index:2;
 }
 
 /* mobile */
-@media only screen and (max-width:500px){
+@media only screen and (max-width:540px){
 	.colorheader{
 		display:none;
 	}
@@ -68,6 +68,17 @@ z-index:2;
 	.logo{
 		width:50%;
 	}
+}
+@media screen and (min-width: 540px) and (max-width: 780px) {
+	.logo{
+		width:30%;
+	}
+	.colorheader{
+		display:none;
+	}
+	.upload{
+		display:none;
+	}	
 }
 
 /* CSS to change Default/'Accent' color */
