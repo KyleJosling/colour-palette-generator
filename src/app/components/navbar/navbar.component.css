@@ -57,6 +57,9 @@ z-index:2;
 	display:inline-block;
 }
 
+.copy{
+	vertical-align:baseline;
+}
 /* mobile */
 @media only screen and (max-width:540px){
 	.colorheader{
@@ -67,6 +70,9 @@ z-index:2;
 	}
 	.logo{
 		width:50%;
+	}
+	.copy{
+		display:none;
 	}
 }
 @media screen and (min-width: 540px) and (max-width: 780px) {

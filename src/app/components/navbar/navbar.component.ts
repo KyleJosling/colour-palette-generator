@@ -28,4 +28,13 @@ export class NavbarComponent implements OnInit {
 			this.kMeans=event.value;
 		}
 
+		public copyToClipboard(){
+			console.log('copy');
+			var inp= document.createElement('input');
+			inp.value=this.dataService.getColors();
+			document.body.appendChild(inp);
+			inp.select();
+			document.execCommand('copy');
+		}
+
 }

@@ -6,7 +6,7 @@ import { Subject } from 'rxjs/Subject';
 @Injectable()
 export class DataService {
 
-  private colors: string[] = [];
+  private colors: string[] = ["rgb(109,187,229)","rgb(42,126,202)","rgb(82,208,218)","rgb(245,177,194)","rgb(255,202,88)"];
 	//Create subject (list of strings that will be our colours)
   private colorsFoundSource = new Subject<string[]>();
 
@@ -64,4 +64,8 @@ export class DataService {
         this.spinnerService.hide();
       });
   }
+
+	public getColors(){
+		return String(this.colors);
+	}
 }
