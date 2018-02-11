@@ -32,6 +32,16 @@ export class NavbarComponent implements OnInit {
 			console.log('copy');
 			var inp= document.createElement('input');
 			inp.value=this.dataService.getColors();
+			inp.style.position='fixed';
+			inp.style.top='0';
+			inp.style.left='0';
+			inp.style.border='none';
+			inp.style.outline='none';
+			inp.style.boxShadow='none';
+			inp.style.background='transparent';
+			inp.style.width='2em';
+			inp.style.height='2em';
+
 			document.body.appendChild(inp);
 			inp.select();
 			document.execCommand('copy');

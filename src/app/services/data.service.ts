@@ -11,7 +11,7 @@ export class DataService {
   private colorsFoundSource = new Subject<string[]>();
 
 	//Observable for colours component
-  colorsFound$ = this.colorsFoundSource.asObservable();
+  public colorsFound$ = this.colorsFoundSource.asObservable();
 
   constructor(
     private http: HttpClient,
